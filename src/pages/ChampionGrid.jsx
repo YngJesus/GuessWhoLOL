@@ -64,7 +64,13 @@ function ChampionGrid() {
   };
 
   if (loading) {
-    return <div className="text-center">Loading champions...</div>;
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <div className="text-center text-xl font-semibold text-gray-700">
+          Loading champions...
+        </div>
+      </div>
+    );
   }
 
   return (
