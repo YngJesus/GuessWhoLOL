@@ -13,24 +13,24 @@ GuessWhoLOL is a fun and interactive game where players guess the names of Leagu
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
 
    ```sh
    git clone https://github.com/yourusername/GuessWhoLOL.git
    cd GuessWhoLOL
    ```
 
-2. Install dependencies:
+2. **Install dependencies:**
 
-```sh
-npm install
-```
+   ```sh
+   npm install
+   ```
 
-3. Start the development server:
+3. **Start the development server:**
 
-```sh
-npm run dev
-```
+   ```sh
+   npm run dev
+   ```
 
 Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
