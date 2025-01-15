@@ -2,7 +2,7 @@
 
 ## Description
 
-GuessWhoLOL is a fun and interactive game where players guess the names of League of Legends champions based on their images. The game is built using React and leverages the Riot Games API to fetch champion data.
+A fun, interactive Guess Who game featuring 25 League of Legends champions! Players can visually "take down" champions as they narrow down their guesses and even reverse their actions if needed. Built for League enthusiasts to enjoy with friends.
 
 ## Features
 
