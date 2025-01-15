@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getChampions } from "../components/getChampions";
 import "../App.css"; // Import the CSS file for styling
+import riotLogo from "/img/riot.png"; // Import the Riot Games logo
 
 const selectedChampionIds = [
   "Ahri",
@@ -92,11 +93,7 @@ function ChampionGrid() {
             </div>
             <div className="card-back">
               <div className="back-content">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/riot.png`}
-                  alt="Riot Games"
-                  className="riot-logo"
-                />
+                <img src={riotLogo} alt="Riot Games" className="riot-logo" />
                 <p className="riot-text">Riot Games</p>
               </div>
             </div>
