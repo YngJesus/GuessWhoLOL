@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getChampions } from "../components/getChampions";
 import "../App.css"; // Import the CSS file for styling
-import riotLogo from "/img/riot.png"; // Import the Riot Games logo
+import riotLogo from "../../public/img/riot.png"; // Import the Riot Games logo
 
 const selectedChampionIds = [
   "Ahri",
@@ -66,10 +66,8 @@ function ChampionGrid() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-screen">
-        <div className="text-center text-xl font-semibold text-gray-700">
-          Loading champions...
-        </div>
+      <div className="loader-container">
+        <div className="loader"></div>
       </div>
     );
   }
