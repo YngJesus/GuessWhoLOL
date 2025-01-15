@@ -20,10 +20,16 @@ GuessWhoLOL is a fun and interactive game where players guess the names of Leagu
    ```
 
 2.Install dependencies:
+
+```sh
 npm install
+```
 
 3.Start the development server:
+
+```sh
 npm run dev
+```
 
 Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
