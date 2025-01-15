@@ -1,6 +1,5 @@
 import axios from "axios";
 
-const API_KEY = "RGAPI-2af4f015-e4b0-4ed3-bf57-075b3aa59dfe";
 const BASE_URL = "https://ddragon.leagueoflegends.com";
 
 export const getChampions = async () => {
