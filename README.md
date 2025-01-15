@@ -1,8 +1,37 @@
-# React + Vite
+# GuessWhoLOL
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+GuessWhoLOL is a fun and interactive game where players guess the names of League of Legends champions based on their images. The game is built using React and leverages the Riot Games API to fetch champion data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Interactive card flipping game
+- Fetches real-time data from the Riot Games API
+- Responsive design for various screen sizes
+- Loading indicator while fetching data
+
+## Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/GuessWhoLOL.git
+   cd GuessWhoLOL
+   ```
+
+2.Install dependencies:
+npm install
+
+3.Start the development server:
+npm run dev
+
+Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Acknowledgements
+Riot Games API
+React
+TailwindCSS
