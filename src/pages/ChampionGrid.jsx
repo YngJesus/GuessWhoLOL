@@ -93,7 +93,7 @@ function ChampionGrid() {
             <div className="card-back">
               <div className="back-content">
                 <img
-                  src="img/riot.png"
+                  src={`${process.env.PUBLIC_URL}/img/riot.png`}
                   alt="Riot Games"
                   className="riot-logo"
                 />
