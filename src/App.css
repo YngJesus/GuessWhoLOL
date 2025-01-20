@@ -1,3 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
+
+/* Navbar */
+.custom-navbar {
+  font-size: 1.6rem;
+  font-family: "Jersey 25";
+}
+
+.cs {
+  font-family: "Jersey 10";
+  font-size: 10rem;
+}
+/* Navbar */
+
+/* HeroSection */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 83vh;
+  overflow: hidden;
+}
+.hero-titles h1 {
+  position: relative;
+  font-family: "Jersey 10";
+  font-size: 9rem;
+  color: #ffff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.hero-titles p {
+  position: relative;
+  font-family: "Jersey 25";
+  font-size: 2.2rem;
+  color: #ffff;
+}
+.custom-btn1 {
+  position: relative;
+  color: #ffff;
+  font-family: "Jersey 10";
+  font-size: 2.3rem;
+  background: none;
+  border: solid 2px white;
+  padding: 0.4rem 3rem;
+  transition: 0.5s;
+}
+.custom-btn2 {
+  position: relative;
+
+  color: #ffff;
+  font-family: "Jersey 10";
+  font-size: 2.3rem;
+  background: none;
+  border: solid 2px white;
+  padding: 0.4rem 0.5rem;
+  transition: 0.5s;
+}
+/* HOVERS  */
+
+.custom-btn1:hover,
+.custom-btn2:hover {
+  background: white;
+  color: #000;
+  box-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+}
+
+/* HeroSection */
+
+/* Game */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -141,3 +210,4 @@
     transform: rotate(360deg);
   }
 }
+/* Game */
