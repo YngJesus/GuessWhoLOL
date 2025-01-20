@@ -6,7 +6,7 @@ function HeroSection() {
     <>
       <section className="hero-section text-center   ">
         <video
-          className="absolute top-0 left-0 "
+          className="absolute top-0 left-0"
           src="/GuessWhoLOL/video/jinx2.mp4"
           autoPlay
           loop
