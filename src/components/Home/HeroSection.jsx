@@ -1,21 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { grid } from "ldrs";
+
+grid.register();
 
 function HeroSection() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const video = document.getElementById("background-video");
+    video.onloadeddata = () => {
+      setLoading(false);
+    };
+  }, []);
+
   return (
     <>
-      <section className="hero-section text-center   ">
+      {loading && (
+        <div className="flex justify-center items-center h-screen">
+          <l-grid size="150" speed="1.5" color="white"></l-grid>
+        </div>
+      )}
+      <section
+        className={`hero-section text-center ${loading ? "hidden" : ""}`}
+      >
         <video
-          className="absolute top-0 left-0"
+          id="background-video"
+          className="absolute top-0 left-0 w-full h-full object-cover"
           src="/GuessWhoLOL/video/jinx2.mp4"
           autoPlay
           loop
           muted
         ></video>
-        <nav className=" relative bg-transparent p-4 flex  justify-center">
-          <div className="custom-navbar  flex flex-row gap-32">
+        <nav className="relative bg-transparent p-4 flex justify-center">
+          <div className="custom-navbar flex flex-row gap-32">
             <div>
-              <Link className="text-white " to="/">
+              <Link className="text-white" to="/">
                 Home
               </Link>
             </div>

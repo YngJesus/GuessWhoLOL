@@ -6,7 +6,6 @@ import HeroSection from "../components/Home/HeroSection";
 function HomePage() {
   return (
     <>
-      {/* <Navbar /> */}
       <HeroSection />
     </>
   );

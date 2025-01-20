@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { getChampions } from "../components/getChampions";
 import "../App.css"; // Import the CSS file for styling
 import riotLogo from "../../public/img/riot.png"; // Import the Riot Games logo
+import { helix } from "ldrs";
+
+helix.register();
 
 const selectedChampionIds = [
   "Ahri",
@@ -66,8 +69,8 @@ function ChampionGrid() {
 
   if (loading) {
     return (
-      <div className="loader-container">
-        <div className="loader"></div>
+      <div className="flex justify-center items-center h-screen">
+        <l-helix size="100" speed="2.5" color="white"></l-helix>
       </div>
     );
   }
