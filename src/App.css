@@ -9,7 +9,7 @@
 
 .cs {
   font-family: "Jersey 10";
-  font-size: 10rem;
+  font-size: 4rem;
 }
 /* Navbar */
 
@@ -34,16 +34,38 @@
   font-size: 2.2rem;
   color: #ffff;
 }
+/* BUTTON1 */
 .custom-btn1 {
   position: relative;
   color: #ffff;
   font-family: "Jersey 10";
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   background: none;
   border: solid 2px white;
   padding: 0.4rem 3rem;
   transition: 0.5s;
 }
+
+@media (min-width: 640px) {
+  .custom-btn1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-btn1 {
+    font-size: 2.6rem; /* md:text-lg */
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-btn1 {
+    font-size: 3rem; /* lg:text-xl */
+  }
+}
+
+/* BUTTON1 */
+
 .custom-btn2 {
   position: relative;
 

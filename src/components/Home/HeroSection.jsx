@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { grid } from "ldrs";
+import NavBar from "../commun/Navbar";
 
 grid.register();
 
@@ -32,38 +33,26 @@ function HeroSection() {
           loop
           muted
         ></video>
-        <nav className="relative bg-transparent p-4 flex justify-center">
-          <div className="custom-navbar flex flex-row gap-32">
-            <div>
-              <Link className="text-white" to="/">
-                Home
-              </Link>
-            </div>
-            <div>
-              <Link className="text-white" to="/ComingSoon">
-                How To Play
-              </Link>
-            </div>
-            <div>
-              <Link className="text-white" to="/ComingSoon">
-                About
-              </Link>
-            </div>
-            <div>
-              <Link className="text-white" to="/ComingSoon">
-                Editions
-              </Link>
-            </div>
-          </div>
-        </nav>
-        <div className="hero-titles mt-32">
-          <h1 className="leading-none">GUESS WHO</h1>
-          <p className="leading-none">LEAGUE OF LEGENDS EDITION</p>
-          <div className="space-x-12 mt-20">
-            <Link to="/Game" className="custom-btn1">
+        <NavBar />
+
+        <div className="hero-titles  md:mt-32 px-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none font-bold">
+            GUESS WHO
+          </h1>
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-none mt-4">
+            LEAGUE OF LEGENDS EDITION
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-12 mt-10 md:mt-20">
+            <Link
+              to="/Game"
+              className="custom-btn1 px-6 py-3 text-sm sm:text-base md:text-lg lg:text-xl"
+            >
               Play Now!
             </Link>
-            <Link to="/ComingSoon" className="custom-btn2">
+            <Link
+              to="/ComingSoon"
+              className="custom-btn2 px-6 py-3 text-sm sm:text-base md:text-lg lg:text-xl"
+            >
               Learn How To Play
             </Link>
           </div>
