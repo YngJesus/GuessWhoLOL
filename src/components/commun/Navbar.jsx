@@ -32,7 +32,7 @@ export default function NavBar() {
                 {" "}
                 <img
                   alt="Your Company"
-                  src="public/img/Logo.png"
+                  src="/GuessWhoLOL/img/Logo.png"
                   className="h-20 w-auto rounded-full cursor-pointer"
                 />
               </Link>
