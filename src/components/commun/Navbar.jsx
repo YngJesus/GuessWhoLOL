@@ -28,7 +28,7 @@ export default function NavBar() {
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center">
             <div className="flex shrink-0 items-center">
-              <Link to={"//"}>
+              <Link to="/">
                 {" "}
                 <img
                   alt="Your Company"

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { grid } from "ldrs";
 import NavBar from "../commun/Navbar";
+import SplashCursor from "../commun/SplashCursor";
+import GithubBtn from "../commun/GithubBtn";
 
 grid.register();
 
@@ -34,30 +36,33 @@ function HeroSection() {
           muted
         ></video>
         <NavBar />
-
         <div className="hero-titles  md:mt-32 px-4">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none font-bold">
+          <h1 className="text-4xl sm:text-8xl md:text-9xl lg:text-9xl xl:text-9xl leading-none font-bold">
             GUESS WHO
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-none mt-4">
+          <p className="text-lg sm:text-xl md:text-9xl lg:text-9xl xl:text-9xl leading-none mt-4">
             LEAGUE OF LEGENDS EDITION
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-12 mt-10 md:mt-20">
             <Link
               to="/Game"
-              className="custom-btn1 px-6 py-3 text-sm sm:text-base md:text-lg lg:text-xl"
+              className="custom-btn1 px-6 py-3 text-sm sm:text-3xl md:text-3xl lg:text-3xl"
             >
               Play Now!
             </Link>
             <Link
               to="/ComingSoon"
-              className="custom-btn2 px-6 py-3 text-sm sm:text-base md:text-lg lg:text-xl"
+              className="custom-btn2 px-6 py-3 text-sm sm:text-3xl md:text-3xl lg:text-3xl"
             >
               Learn How To Play
             </Link>
           </div>
         </div>
+        <div className="fixed bottom-4 right-4 flex items-center space-x-2">
+          <GithubBtn />
+        </div>
       </section>
+      <SplashCursor />
     </>
   );
 }
