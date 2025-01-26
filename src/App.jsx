@@ -9,7 +9,6 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/nb" element={<NavBar />} />
       <Route path="/Game" element={<ChampionGrid />} />
       <Route path="/ComingSoon" element={<ComingSoon />} />
     </Routes>
