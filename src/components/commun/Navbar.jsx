@@ -40,9 +40,9 @@ export default function NavBar() {
             <div className="hidden sm:block  ml-40 p-4">
               <div className="  custom-navbar flex flex-row gap-32">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     aria-current={item.current ? "page" : undefined}
                     className={classNames(
                       item.current
@@ -52,7 +52,7 @@ export default function NavBar() {
                     )}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -80,8 +80,8 @@ export default function NavBar() {
           {navigation.map((item) => (
             <DisclosureButton
               key={item.name}
-              as="a"
-              href={item.href}
+              as={Link}
+              to={item.href}
               aria-current={item.current ? "page" : undefined}
               className={classNames(
                 item.current
