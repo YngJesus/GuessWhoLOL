@@ -12,8 +12,8 @@ import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "How To Play", href: "/ComingSoon", current: false },
-  { name: "About", href: "/ComingSoon", current: false },
+  { name: "How To Play", href: "/HowToPlay", current: false },
+  { name: "About", href: "/AboutPage", current: false },
   { name: "Editions", href: "/ComingSoon", current: false },
 ];
 

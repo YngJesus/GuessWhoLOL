@@ -4,6 +4,7 @@ import { grid } from "ldrs";
 import NavBar from "../commun/Navbar";
 import SplashCursor from "../commun/SplashCursor";
 import GithubBtn from "../commun/GithubBtn";
+import SplitText from "../commun/SplitText";
 
 grid.register();
 
@@ -25,7 +26,7 @@ function HeroSection() {
         </div>
       )}
       <section
-        className={`hero-section text-center ${loading ? "hidden" : ""}`}
+        className={`hero-section px-8 text-center ${loading ? "hidden" : ""}`}
       >
         <video
           id="background-video"
@@ -40,9 +41,19 @@ function HeroSection() {
           <h1 className="text-4xl sm:text-8xl md:text-9xl lg:text-9xl xl:text-9xl leading-none font-bold">
             GUESS WHO
           </h1>
-          <p className="text-lg sm:text-xl md:text-9xl lg:text-9xl xl:text-9xl leading-none mt-4">
+          <SplitText
+            text=" LEAGUE OF LEGENDS EDITION"
+            className="text-lg sm:text-xl md:text-9xl lg:text-9xl xl:text-9xl leading-none mt-4"
+            delay={100}
+            animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+            animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+            easing="easeOutCubic"
+            threshold={0.2}
+            rootMargin="-50px"
+          />
+          {/* <p className="text-lg sm:text-xl md:text-9xl lg:text-9xl xl:text-9xl leading-none mt-4">
             LEAGUE OF LEGENDS EDITION
-          </p>
+          </p> */}
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-12 mt-10 md:mt-20">
             <Link
               to="/Game"
@@ -51,7 +62,7 @@ function HeroSection() {
               Play Now!
             </Link>
             <Link
-              to="/ComingSoon"
+              to="/HowToPlay"
               className="custom-btn2 px-6 py-3 text-sm sm:text-3xl md:text-3xl lg:text-3xl"
             >
               Learn How To Play
