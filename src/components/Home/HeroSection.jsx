@@ -5,6 +5,7 @@ import NavBar from "../commun/Navbar";
 import SplashCursor from "../commun/SplashCursor";
 import GithubBtn from "../commun/GithubBtn";
 import SplitText from "../commun/SplitText";
+import "../../App.css";
 
 grid.register();
 
