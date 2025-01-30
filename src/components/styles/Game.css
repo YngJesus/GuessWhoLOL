@@ -1,0 +1,342 @@
+/* Game */
+body {
+  background-color: #091428;
+  color: #c8aa6e;
+  font-family: "Beaufort for LOL", serif;
+}
+
+.game-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.game-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #c8aa6e;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  perspective: 1000px;
+  cursor: pointer;
+  width: 100%;
+  height: 200px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-front {
+  background-color: #0a323c;
+  border: 1px solid #c8aa6e;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.card-front:hover {
+  background-color: #0e4b58;
+}
+
+.card-back {
+  background-color: #091428;
+  color: #c8aa6e;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.champion-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.champion-name {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  color: #c8aa6e;
+}
+
+.back-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.riot-logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.riot-text {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.game-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reset-button {
+  background-color: #c8aa6e;
+  color: #091428;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #785a28;
+}
+*/ body {
+  background-color: #0a0e17;
+  color: #5ce1e6;
+  font-family: "Orbitron", sans-serif;
+}
+
+.game-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.game-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5ce1e6;
+  text-shadow: 0 0 10px #5ce1e6;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #5ce1e6, 0 0 10px #5ce1e6, 0 0 15px #5ce1e6,
+      0 0 20px #5ce1e6;
+  }
+  to {
+    text-shadow: 0 0 10px #5ce1e6, 0 0 20px #5ce1e6, 0 0 30px #5ce1e6,
+      0 0 40px #5ce1e6;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  padding: 15px;
+}
+
+@media (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  perspective: 1000px;
+  cursor: pointer;
+  width: 100%;
+  height: 200px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-front {
+  background-color: rgba(92, 225, 230, 0.1);
+  border: 2px solid #5ce1e6;
+  box-shadow: 0 0 15px rgba(92, 225, 230, 0.5);
+  transition: all 0.3s ease;
+}
+
+.card-front:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(92, 225, 230, 0.8);
+}
+
+.card-back {
+  background-color: rgba(255, 0, 0, 0.2);
+  border: 2px solid #ff0000;
+  transform: rotateY(180deg);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+.champion-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #5ce1e6;
+  transition: all 0.3s ease;
+}
+
+.card-front:hover .champion-image {
+  transform: scale(1.1);
+}
+
+.champion-name {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  color: #5ce1e6;
+  text-shadow: 0 0 5px #5ce1e6;
+}
+
+.eliminated-text {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff0000;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+.game-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reset-button {
+  background-color: transparent;
+  color: #5ce1e6;
+  border: 2px solid #5ce1e6;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(92, 225, 230, 0.5);
+}
+
+.reset-button:hover {
+  background-color: #5ce1e6;
+  color: #0a0e17;
+  box-shadow: 0 0 20px rgba(92, 225, 230, 0.8);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card:not(.flipped) .card-front {
+  animation: pulse 2s infinite;
+}
+
+/* Game */
