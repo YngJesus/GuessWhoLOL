@@ -1,5 +1,4 @@
-/* Game */
-body {
+/* body {
   background-color: #091428;
   color: #c8aa6e;
   font-family: "Beaufort for LOL", serif;
@@ -154,7 +153,7 @@ body {
 .reset-button:hover {
   background-color: #785a28;
 }
-*/ body {
+*/ /*body {
   background-color: #0a0e17;
   color: #5ce1e6;
   font-family: "Orbitron", sans-serif;
@@ -339,4 +338,214 @@ body {
   animation: pulse 2s infinite;
 }
 
+ */
 /* Game */
+body {
+  background-color: #0a0e17;
+  color: #5ce1e6;
+  font-family: "Orbitron", sans-serif;
+}
+
+.game-container {
+  max-width: 75rem; /* 1200px to rem */
+  margin: 0 auto;
+  padding: 1.25rem; /* 20px to rem */
+}
+
+.game-title {
+  font-size: 2.5rem; /* 2.5em remains the same */
+  text-align: center;
+  margin-bottom: 1.25rem; /* 20px to rem */
+  color: #5ce1e6;
+  text-shadow: 0 0 0.625rem #5ce1e6; /* 10px to rem */
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 0.3125rem #5ce1e6, 0 0 0.625rem #5ce1e6,
+      0 0 0.9375rem #5ce1e6, /* 5px, 10px, 15px to rem */ 0 0 1.25rem #5ce1e6; /* 20px to rem */
+  }
+  to {
+    text-shadow: 0 0 0.625rem #5ce1e6, 0 0 1.25rem #5ce1e6, 0 0 1.875rem #5ce1e6,
+      /* 10px, 20px, 30px to rem */ 0 0 2.5rem #5ce1e6; /* 40px to rem */
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.9375rem; /* 15px to rem */
+  padding: 0.9375rem; /* 15px to rem */
+}
+
+@media (max-width: 75rem) {
+  /* 1200px to rem */
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 62rem) {
+  /* 992px to rem */
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 48rem) {
+  /* 768px to rem */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 36rem) {
+  /* 576px to rem */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  perspective: 62.5rem; /* 1000px to rem */
+  cursor: pointer;
+  width: 100%;
+  height: 12.5rem; /* 200px to rem */
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.9375rem; /* 15px to rem */
+  overflow: hidden;
+}
+
+.card-front {
+  background-color: rgba(92, 225, 230, 0.1);
+  border: 0.125rem solid #5ce1e6; /* 2px to rem */
+  box-shadow: 0 0 0.9375rem rgba(92, 225, 230, 0.5); /* 15px to rem */
+  transition: all 0.3s ease;
+}
+
+.card-front:hover {
+  transform: translateY(-0.3125rem); /* 5px to rem */
+  box-shadow: 0 0.3125rem 1.25rem rgba(92, 225, 230, 0.8); /* 5px, 20px to rem */
+}
+
+.card-back {
+  background-color: rgba(255, 0, 0, 0.2);
+  border: 0.125rem solid #ff0000; /* 2px to rem */
+  transform: rotateY(180deg);
+  box-shadow: 0 0 0.9375rem rgba(255, 0, 0, 0.5); /* 15px to rem */
+}
+
+.champion-image {
+  width: 6.25rem; /* 100px to rem */
+  height: 6.25rem; /* 100px to rem */
+  border-radius: 50%;
+  margin-bottom: 0.625rem; /* 10px to rem */
+  border: 0.125rem solid #5ce1e6; /* 2px to rem */
+  transition: all 0.3s ease;
+}
+
+.card-front:hover .champion-image {
+  transform: scale(1.1);
+}
+
+.champion-name {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #5ce1e6;
+  text-shadow: 0 0 0.3125rem #5ce1e6; /* 5px to rem */
+}
+
+.eliminated-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff0000;
+  text-shadow: 0 0 0.625rem #ff0000; /* 10px to rem */
+}
+
+.game-controls {
+  text-align: center;
+  margin-top: 1.25rem; /* 20px to rem */
+}
+
+.reset-button {
+  background-color: transparent;
+  color: #5ce1e6;
+  border: 0.125rem solid #5ce1e6; /* 2px to rem */
+  padding: 0.625rem 1.25rem; /* 10px 20px to rem */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem; /* 2px to rem */
+  border-radius: 0.3125rem; /* 5px to rem */
+  box-shadow: 0 0 0.625rem rgba(92, 225, 230, 0.5); /* 10px to rem */
+}
+
+.reset-button:hover {
+  background-color: #5ce1e6;
+  color: #0a0e17;
+  box-shadow: 0 0 1.25rem rgba(92, 225, 230, 0.8); /* 20px to rem */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card:not(.flipped) .card-front {
+  animation: pulse 2s infinite;
+}
+
+.game-instructions,
+.selected-champion {
+  text-align: center;
+  margin-bottom: 1.25rem; /* 20px to rem */
+  font-size: 1.2rem;
+  color: #5ce1e6;
+  text-shadow: 0 0 0.3125rem #5ce1e6; /* 5px to rem */
+}
+
+.selected-champion-image {
+  width: 7.5rem; /* 120px to rem */
+  height: 7.5rem; /* 120px to rem */
+  border-radius: 50%;
+  border: 0.1875rem solid #5ce1e6; /* 3px to rem */
+  box-shadow: 0 0 0.9375rem rgba(92, 225, 230, 0.8); /* 15px to rem */
+  margin: 0.625rem 0; /* 10px to rem */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
