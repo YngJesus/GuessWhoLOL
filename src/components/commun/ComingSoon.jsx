@@ -39,7 +39,7 @@ function ComingSoon() {
         <h1 className=" sm:text-8xl md:text-8xl lg:text-9xl xl:text-9xl font-bold mb-8">
           COMING SOON...
         </h1>
-        <Link to="//" className="custom-btn1">
+        <Link to="/" className="custom-btn1">
           Go Back!
         </Link>
       </div>
