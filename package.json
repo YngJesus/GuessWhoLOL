@@ -42,7 +42,7 @@
     "globals": "^15.14.0",
     "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17",
-    "vite": "^6.0.5",
+    "vite": "^6.0.11",
     "vite-plugin-sitemap": "^0.7.1"
   }
 }
