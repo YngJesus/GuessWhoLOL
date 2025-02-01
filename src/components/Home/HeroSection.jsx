@@ -70,7 +70,7 @@ function HeroSection() {
             </Link>
           </div>
         </div>
-        <div className="fixed bottom-4 right-4 flex items-center space-x-2">
+        <div className="relative  bottom-4 right-4 flex items-center space-x-2">
           <GithubBtn />
         </div>
       </section>

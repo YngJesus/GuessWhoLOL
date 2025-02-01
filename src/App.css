@@ -11,7 +11,57 @@
   font-family: "Jersey 10";
   font-size: 4rem;
 }
-/* Navbar */
+
+@keyframes chaosWiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes chaosGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+      0 0 30px rgba(255, 0, 255, 0.6);
+  }
+}
+
+.custom-navbar a:hover {
+  animation: chaosWiggle 0.5s ease-in-out infinite,
+    chaosGlow 2s ease-in-out infinite;
+}
+
+.custom-navbar a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.custom-navbar a:hover::before {
+  opacity: 0.3;
+}
+
+/* Mobile menu button animation */
+.group:hover .group-hover\:rotate-180 {
+  transform: rotate(180deg);
+}
 
 /* HeroSection */
 .hero-section {
