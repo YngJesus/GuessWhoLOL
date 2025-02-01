@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yngjesus.github.io/GuessWhoLOL",
+
+  "homepage": "https://guesswholol.me",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
