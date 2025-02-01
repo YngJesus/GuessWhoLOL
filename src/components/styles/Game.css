@@ -513,22 +513,6 @@ body {
   box-shadow: 0 0 1.25rem rgba(92, 225, 230, 0.8); /* 20px to rem */
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.card:not(.flipped) .card-front {
-  animation: pulse 5s infinite;
-}
-
 .game-instructions,
 .selected-champion {
   text-align: center;
