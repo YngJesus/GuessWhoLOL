@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { grid } from "ldrs";
 import NavBar from "../commun/Navbar";
@@ -36,7 +36,10 @@ function HeroSection() {
           autoPlay
           loop
           muted
+          loading="lazy"
+          poster="/img/jinx.jpg"
         ></video>
+
         <NavBar />
         <div className="hero-titles  md:mt-32 px-4">
           <h1 className="text-4xl sm:text-8xl md:text-9xl lg:text-9xl xl:text-9xl leading-none font-bold">
@@ -52,9 +55,6 @@ function HeroSection() {
             threshold={0.2}
             rootMargin="-50px"
           />
-          {/* <p className="text-lg sm:text-xl md:text-9xl lg:text-9xl xl:text-9xl leading-none mt-4">
-            LEAGUE OF LEGENDS EDITION
-          </p> */}
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-12 mt-10 md:mt-20">
             <Link
               to="/Game"

@@ -1,11 +1,9 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import ChampionGrid from "./pages/ChampionGrid";
 import HomePage from "./pages/HomePage";
 import ComingSoon from "./components/commun/ComingSoon";
 import HowToPlay from "./pages/HowToPlay";
 import AboutPage from "./pages/AboutPage";
-import GithubBtn from "./components/commun/GithubBtn";
 
 function App() {
   return (
