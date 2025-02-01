@@ -21,7 +21,7 @@ export default defineConfig({
   plugins: [
     react(),
     SitemapPlugin({
-      siteUrl: "https://guesswholol.me", // Replace with your actual domain
+      hostname: "https://guesswholol.me", // Replace with your actual domain
       changefreq: "daily", // You can adjust the frequency (daily, weekly, etc.)
       priority: 0.8, // Priority for pages, set it higher for important pages
       lastmod: true, // Enable last modified dates for your pages
