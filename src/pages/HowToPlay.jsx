@@ -28,7 +28,7 @@ function HowToPlay() {
         <video
           id="background-video"
           className="absolute top-0 left-0 w-full h-full object-cover "
-          src="/GuessWhoLOL/video/Pyke.mp4"
+          src="/video/Pyke.mp4"
           autoPlay
           loop
           muted
@@ -55,7 +55,7 @@ function HowToPlay() {
               Step 1: Choose Your Champion
             </h1>
             <img
-              src="/GuessWhoLOL/img/htp-card1.png"
+              src="/img/htp-card1.png"
               alt="Card1"
               className="h-48 sm:h-64 mt-8  sm:mb-10"
             />
@@ -68,7 +68,7 @@ function HowToPlay() {
               Step 2: Ask Questions
             </h1>
             <img
-              src="/GuessWhoLOL/img/thinkingbbl.png"
+              src="/img/thinkingbbl.png"
               alt="Thinking Bubble"
               className="mt-8"
             />
@@ -93,12 +93,12 @@ function HowToPlay() {
             </h1>
             <div className="relative">
               <img
-                src="/GuessWhoLOL/img/htp-card2.png"
+                src="/img/htp-card2.png"
                 alt="Card2"
                 className="h-48 sm:h-64 mt-8 mb-10"
               />
               <img
-                src="/GuessWhoLOL/img/FP.png"
+                src="/img/FP.png"
                 alt="Pointing Finger"
                 className="absolute top-24 sm:top-40 left-16 sm:left-24 transform -rotate-45"
               />

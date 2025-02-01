@@ -26,7 +26,7 @@ function ComingSoon() {
         className={`absolute top-0 left-0 w-full h-full object-cover ${
           loading ? "hidden" : ""
         }`}
-        src="/GuessWhoLOL/video/comingsoon.mp4"
+        src="/video/comingsoon.mp4"
         autoPlay
         loop
         muted

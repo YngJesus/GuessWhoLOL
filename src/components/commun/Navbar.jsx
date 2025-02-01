@@ -27,7 +27,7 @@ export default function NavBar() {
                   <Link to="/">
                     <img
                       alt="Your Company"
-                      src="/GuessWhoLOL/img/Logo.png"
+                      src="/img/Logo.png"
                       className="h-20 w-auto rounded-full cursor-pointer transform hover:rotate-12 transition-transform duration-300"
                     />
                   </Link>
