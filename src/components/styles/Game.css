@@ -526,7 +526,7 @@ body {
 }
 
 .card:not(.flipped) .card-front {
-  animation: pulse 2s infinite;
+  animation: pulse 5s infinite;
 }
 
 .game-instructions,
