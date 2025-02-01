@@ -67,9 +67,9 @@ export default function AboutPage() {
               About the Creator
             </h2>
             <p className=" font-jersey25 text-justify text-2xl font-medium">
-              Created by Baha, a software engineering student passionate about
-              technology and coding, combining League of Legends with
-              interactive gameplay.
+              Made by a Me who likes League of Legends and making stuff.If you
+              like what you see, visit my GitHub or drop a star! 🙌 (Or don’t,
+              I’m not your boss.)
             </p>
             <div className="mt-6">
               {/* <img
